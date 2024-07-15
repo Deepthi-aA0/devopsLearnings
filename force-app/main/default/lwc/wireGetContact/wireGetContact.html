@@ -1,0 +1,15 @@
+<template>
+    <lightning-card>
+        <p>contact Name : {name}</p>
+        <p>Email : {email}</p>
+
+        <!-- for multiple records
+        <template lwc:if={outputs}>
+            <template for:each={outputs} for:item="output">
+                <p class="slds-var-p-around_small" key={output.result.Id}>
+                    {output.result.fields.Name.value}
+                </p>
+            </template> 
+        </template-->
+    </lightning-card>
+</template>

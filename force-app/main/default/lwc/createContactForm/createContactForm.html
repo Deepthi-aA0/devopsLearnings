@@ -1,0 +1,36 @@
+<template>
+    <lightning-card icon-name="standard:contact" title="Contact Form in LWC">
+        <div class="slds-gird slds-wrap">
+            <div class="slds-p-horizantal--small slds-col slds-size_6-of-12 slds-m-bottom-medium">
+                <div class="slds-form-element">
+                    <lightning-input label="First Name" onchange={handleChange}></lightning-input>  
+                </div>
+            </div>
+            <div class="slds-p-horizantal--small slds-col slds-size_6-of-12 slds-m-bottom-medium">
+                <div class="slds-form-element">
+                    <lightning-input label="Last Name" onchange={handleChange}></lightning-input>
+                </div>
+            </div>
+            <div class="slds-p-horizantal--small slds-col slds-size_6-of-12 slds-m-bottom-medium">
+                <div class="slds-form-element">
+                    <lightning-input type="date" label="Birth Date" value={earliestDate} min={minEndDate} max={maxEndDate} onchange={handleDateChange} required></lightning-input>
+                </div>
+            </div>
+            <div class="slds-p-horizantal--small slds-col slds-size_6-of-12 slds-m-bottom-medium">
+                <div class="slds-form-element">
+                    <lightning-input label="Email" onchange={handleChange}></lightning-input>
+                </div>
+            </div>
+            <div class="slds-p-horizantal--small slds-col slds-size_6-of-12 slds-m-bottom-medium">
+                <div class="slds-form-element">
+                    <lightning-input label="Department" onchange={handleChange}></lightning-input>
+                </div>
+            </div>
+            <div class="slds-p-horizantal--small slds-col slds-size_6-of-12 slds-m-bottom-medium">
+                <div class="slds-form-element">
+                    <lightning-button label="create Record" variant="brand" onclick={handleClick}></lightning-button>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

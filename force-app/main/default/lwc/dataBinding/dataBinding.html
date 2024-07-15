@@ -1,0 +1,19 @@
+<template>
+    <!--In template we can access property value directly if its primitive or object-->
+    <!--dot notation is used to access the property from object-->
+    <lightning-card title="data binding">
+        <div>I am {name} and my age {age} and {details.tech}</div>
+        <div class ="slds-var-m-around_medium">
+        <lightning-input label="enter title" onchange={handleChange}></lightning-input>
+        <h1>here the title {title}</h1>
+        </div>
+    </lightning-card>
+
+   <!--track property-->
+   <lightning-card title="track properties">
+    <div class ="slds-var-m-around_medium">
+    <lightning-input type ="text" label="enter the city" onchange={trackHandler}></lightning-input>
+    <div>{address.city} is my city</div>
+    </div>
+</lightning-card>
+</template>
